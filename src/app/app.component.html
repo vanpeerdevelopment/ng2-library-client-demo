@@ -1,3 +1,5 @@
 <h1>
-  {{title}}
+  Selected option : {{theLibrarySays}}
 </h1>
+
+<lib-comp [opts]=options (onOptSelect)=optSelected($event)></lib-comp>

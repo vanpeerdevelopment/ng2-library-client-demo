@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app works!';
+  //VDAB geeft mee
+  options = ['happy', 'birthday','SHUT UP'];
+  
+  theLibrarySays;
+  
+  optSelected(event) {
+    this.theLibrarySays = event;
+  }
 }
