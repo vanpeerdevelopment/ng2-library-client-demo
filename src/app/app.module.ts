@@ -4,17 +4,18 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import { LibraryComponent } from './library-component.component';
+
+import { Ng2LibraryDemoModule } from 'ng2-library-demo';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    LibraryComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    Ng2LibraryDemoModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
